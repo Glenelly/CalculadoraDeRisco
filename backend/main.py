@@ -1,6 +1,7 @@
 from flask import request, jsonify
 from config import app, db
 from models import Contact
+import os
 
 @app.route("/contacts", methods=["GET"])
 def get_contacts():
@@ -87,9 +88,9 @@ def calcular_risco():
         "classe_risco": classe_risco,
         "mensagem": mensagem
     }), 200
-    
-if  __name__ == "__main__":
+
+if __name__ == "__main__":
     with app.app_context():
         db.create_all()
 
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
