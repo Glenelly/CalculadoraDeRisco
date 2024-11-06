@@ -3,13 +3,14 @@ import React, { useState } from "react";
 const ContactList = ({ contacts, updateContact, updateCallback }) => {
     const [risco, setRisco] = useState({});
     const [erro, setErro] = useState("");
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     const onDelete = async (id) => {
         try {
             const options = {
                 method: "DELETE"
             };
-            const response = await fetch(`http://127.0.0.1:5000/delete_contact/${id}`, options);
+            const response = await fetch(`${apiUrl}/delete_contact/${id}`, options);
             if (response.status === 200) {
                 updateCallback();
             } else {
@@ -22,7 +23,7 @@ const ContactList = ({ contacts, updateContact, updateCallback }) => {
 
     const calcularRisco = async (contact) => {
         try {
-            const response = await fetch("http://127.0.0.1:5000/calcular_risco", {
+            const response = await fetch(`${apiUrl}/calcular_risco`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

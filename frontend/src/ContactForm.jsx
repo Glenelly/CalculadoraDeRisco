@@ -6,6 +6,7 @@ const ContactForm = ({ existingContact = {}, updateCallback }) => {
     const [idade, setIdade] = useState(existingContact.idade || 0);
 
     const updating = Object.entries(existingContact).length !== 0;
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -16,7 +17,7 @@ const ContactForm = ({ existingContact = {}, updateCallback }) => {
             idade
         };
 
-        const url = "http://127.0.0.1:5000/" + (updating ? `update_contact/${existingContact.id}` : "create_contact");
+        const url = `${apiUrl}/${updating ? `update_contact/${existingContact.id}` : "create_contact"}`;
         const options = {
             method: updating ? "PATCH" : "POST",
             headers: {
