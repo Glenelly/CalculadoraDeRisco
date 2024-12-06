@@ -14,7 +14,6 @@ lógica de cálculo de risco.
 <h2>✨ Alterações no Front-End</h2>
 Tecnologia Utilizada: React
 Aprimoramento da Interface: A interface foi redesenhada para tornar a navegação mais intuitiva e as informações mais fáceis de visualizar.
-Organização do Layout: Foram feitos ajustes no layout para melhorar a usabilidade.
 
 <h2>⚙️ Modificações no Back-End</h2>
 Tecnologia Utilizada: Python com Flask
@@ -37,8 +36,6 @@ Exibição dos Resultados: O resultado do cálculo de risco é enviado de volta 
 O projeto foi hospedado e está disponível diretamente através do seguinte link:
 
 Acesse o Deploy Aqui: https://calculadoraderisco.onrender.com/
-
-<h2>Funcionalidades Modificadas</h2>
 
 <h2>Tecnologias Utilizadas</h2>
 Front-End: React
