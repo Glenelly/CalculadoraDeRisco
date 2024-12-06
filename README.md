@@ -13,7 +13,7 @@ lógica de cálculo de risco.
 
 <h2>✨ Alterações no Front-End</h2>
 Tecnologia Utilizada: React
-Aprimoramento da Interface: A interface foi redesenhada para tornar a navegação mais intuitiva e as informações mais fáceis de visualizar.
+Aprimoramento da Interface: A interface limpa e simples para fácil compreensão.
 
 <h2>⚙️ Modificações no Back-End</h2>
 Tecnologia Utilizada: Python com Flask
