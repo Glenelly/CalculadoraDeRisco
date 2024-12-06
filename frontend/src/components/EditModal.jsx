@@ -81,10 +81,10 @@ function EditModal({setUsers, user}) {
 			<Modal isOpen={isOpen} onClose={onClose}>
 				<ModalOverlay />
 				<form onSubmit={handleEditUser}>
-					<ModalContent bg={useColorModeValue("pink.300", "pink.500")}>
+					<ModalContent bg={useColorModeValue("gray.300", "gray.500")}>
 						<ModalHeader>Novo Usuário</ModalHeader>
 						<ModalCloseButton />
-						<ModalBody pb={6} bg={useColorModeValue("pink.300", "pink.500")}>
+						<ModalBody pb={6} bg={useColorModeValue("gray.300", "gray.500")}>
 							<Flex alignItems={"center"} gap={4} >
 								<FormControl>
 									<FormLabel>Nome</FormLabel>

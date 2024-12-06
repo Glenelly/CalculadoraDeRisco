@@ -86,7 +86,7 @@ import {
   
     return (
       <Card>
-        <CardHeader bg={useColorModeValue("pink.300", "pink.500")}>
+        <CardHeader bg={useColorModeValue("gray.300", "gray.500")}>
           <Flex gap={4}>
             <Flex flex={"1"} gap={4} alignItems={"center"}>
               <Box>
@@ -110,7 +110,7 @@ import {
           </Flex>
         </CardHeader>
   
-        <CardBody bg={useColorModeValue("pink.300", "pink.500")}>
+        <CardBody bg={useColorModeValue("gray.300", "gray.500")}>
           <Button colorScheme="blue" onClick={handleCalculateRisk}>
             Calcular Expressão
           </Button>

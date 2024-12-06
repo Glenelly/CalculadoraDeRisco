@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <Stack minH={"100vh"} bg={useColorModeValue("pink.200", "pink.400")}>
+    <Stack minH={"100vh"} bg={useColorModeValue("gray.200", "gray.400")}>
       <Navbar setUsers={setUsers} fetchUsers={fetchUsers} /> {/* Passando fetchUsers como prop */}
       <Container maxW={"1200px"} my={4}>
         <UserGrid users={users} setUsers={setUsers} />

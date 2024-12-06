@@ -10,7 +10,7 @@ const Navbar = ({ setUsers }) => {
                 px={4}
                 my={4}
                 borderRadius={5}
-                bg={useColorModeValue("pink.400", "pink.500")}
+                bg={useColorModeValue("gray.400", "gray.500")}
             >
                 <Flex h="16"
                     alignItems={"center"}

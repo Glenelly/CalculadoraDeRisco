@@ -74,7 +74,7 @@ const handleCreateUser = async (e) => {
 	>
 		<ModalOverlay />
 		<form onSubmit={handleCreateUser}>
-		<ModalContent  bg={useColorModeValue("pink.300", "pink.400")}>
+		<ModalContent  bg={useColorModeValue("gray.300", "gray.500")}>
 			<ModalHeader> Adicionar usuário</ModalHeader>
 			<ModalCloseButton/>
 
@@ -106,7 +106,7 @@ const handleCreateUser = async (e) => {
 			</ModalBody>
 
 			<ModalFooter>
-				<Button colorScheme='pink' color={'blank'} mr={5} type='submit'
+				<Button colorScheme='gray' color={'blank'} mr={5} type='submit'
 					isLoading={isLoading}
 				>
 					Adicionar
