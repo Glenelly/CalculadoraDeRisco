@@ -112,7 +112,7 @@ import {
   
         <CardBody bg={useColorModeValue("gray.300", "gray.500")}>
           <Button colorScheme="blue" onClick={handleCalculateRisk}>
-            Calcular Expressão
+            Calcular Risco
           </Button>
           {riskResult && (
             <Box mt={4}>
